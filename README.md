@@ -14,31 +14,19 @@ Welcome to the **R Workshop**. This repository is a self-contained, step-by-step
 
 ## 2. Why R? (And Why Not Python?)
 
-Students often ask: *"Should I learn Python or R?"* 
+Students often ask: *"Should I learn Python or R?"*
 
 The short answer is: **They are tools in a toolbox, not rival sports teams.**
-+-----------------------------------------------------------------------------------+
-|                        R vs. Python: Research Comparison                          |
-+-----------------------------------------------------------------------------------+
-| FEATURE             | R                                  | PYTHON                 |
-|---------------------+------------------------------------+------------------------|
-| Original Purpose    | Designed by statisticians for  | Designed as a general  |
-|                     | data analysis & graphics.          | computer programming   |
-|                     |                                    | language.              |
-| Data Structures     | Vectors, matrices, and data tables | Requires external      |
-|                     | are built directly into base R.    | libraries (pandas,   |
-|                     |                                    | numpy) to handle data|
-|                     |                                    | tables.                |
-| Biological Research | Bioconductor is the global     | Biopython exists,    |
-| Ecosystem           | standard for genomics, RNA-Seq,    | but is less dominant   |
-|                     | and single-cell analysis.          | in biostatistics.      |
-| Publication Graphics| ggplot2 (Grammar of Graphics)    | matplotlib & seaborn|
-|                     | yields publication-ready plots     | are powerful, but take |
-|                     | effortlessly.                      | more code to format.   |
-| Artificial Intelligence| Good for basic statistical ML.  | The undisputed king of |
-| & Deep Learning     |                                    | Deep Learning/Neural   |
-|                     |                                    | Nets (PyTorch/TF).     |
-+-----------------------------------------------------------------------------------+
+
+### R vs. Python: Research Comparison
+
+| Feature | R | Python |
+|---|---|---|
+| Original Purpose | Designed by statisticians for data analysis & graphics. | Designed as a general-purpose programming language. |
+| Data Structures | Vectors, matrices, and data tables are built directly into base R. | Requires external libraries (pandas, numpy) to handle data tables. |
+| Biological Research Ecosystem | Bioconductor is the global standard for genomics, RNA-Seq, and single-cell analysis. | Biopython exists, but is less dominant in biostatistics. |
+| Publication Graphics | ggplot2 (Grammar of Graphics) yields publication-ready plots effortlessly. | matplotlib & seaborn are powerful, but take more code to format. |
+| Artificial Intelligence & Deep Learning | Good for basic statistical ML. | The undisputed king of Deep Learning/Neural Nets (PyTorch/TF). |
 
 ### When to use R:
 1. **Biostatistics & Clinical Trials:** Analyzing survival curves, ANOVA, linear mixed-effects models, and drug treatment responses.
@@ -61,3 +49,23 @@ The short answer is: **They are tools in a toolbox, not rival sports teams.**
 
 ---
 
+## 4. Installation
+
+### Install R
+1. Go to [CRAN](https://cran.r-project.org/).
+2. Choose your OS (Windows/Mac/Linux) and download the latest R installer.
+3. Run the installer with default settings.
+
+### Install RStudio
+1. Go to [posit.co/download/rstudio-desktop](https://posit.co/download/rstudio-desktop/).
+2. Download the free **RStudio Desktop** version for your OS.
+3. Install it — RStudio automatically detects your R installation.
+
+### Install the R Extension (for a code editor, not VS Code itself)
+1. Open your existing code editor (e.g., VS Code).
+2. Go to the **Extensions** panel.
+3. Search for **"R"** (by REditorSupport) and click **Install**.
+4. Also install **R Debugger** (optional, for step-through debugging).
+5. In the terminal, run `install.packages("languageserver")` inside R so the extension can provide autocomplete and linting.
+
+---
