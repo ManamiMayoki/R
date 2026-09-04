@@ -74,7 +74,17 @@ is_teacher <- FALSE
 z <- 2 + 3i
 # Type Checking
 x <- 10
-class(x)
-typeof(x)
+class(x) #class = what kind of thing is it? → numeric
+typeof(x) #typeof = how is it stored internally? → double
 
 
+# 6. Important Special Values
+#R has some special values you'll encounter constantly.
+# 1. NA - Missing value.
+y <- c(10, 20, NA, 40)
+# 2. NULL - Absence of a value.
+z <- NULL
+# 3. Inf - Infinity.
+10 / 0
+# 4. NaN - Not a Number.
+0 / 0
