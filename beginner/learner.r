@@ -88,3 +88,13 @@ z <- NULL
 10 / 0
 # 4. NaN - Not a Number.
 0 / 0
+
+
+# 7. Vectors
+# one-dimensional collection of values of the same basic type.
+c()  # c means combine.
+marks <- c(80, 75, 90, 85, 70)
+marks
+
+
+# 8. Vector Indexing
