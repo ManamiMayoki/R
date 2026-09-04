@@ -93,8 +93,16 @@ z <- NULL
 # 7. Vectors
 # one-dimensional collection of values of the same basic type.
 c()  # c means combine.
-marks <- c(80, 75, 90, 85, 70)
-marks
+score <- c(80, 75, 90, 85, 70)
+score
 
 
 # 8. Vector Indexing
+marks <- c(80, 75, 90, 85)
+# 80   75   90   85
+#  ↑    ↑    ↑    ↑
+#  1    2    3    4
+marks[1]
+marks[c(1, 3)] #Get multiple elements
+marks[2:4] #Get a range of elements
+marks[length(marks)]
