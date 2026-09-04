@@ -106,3 +106,8 @@ marks[1]
 marks[c(1, 3)] #Get multiple elements
 marks[2:4] #Get a range of elements
 marks[length(marks)]
+
+
+# 9. Creating Sequences
+1:10 #outputs 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+seq(1, 10, by = 2) #outputs 1, 3, 5, 7, 9
