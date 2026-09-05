@@ -117,3 +117,58 @@ seq(1, 10, by = 2) #outputs 1, 3, 5, 7, 9
 #Use rep()
 rep(5, times = 3) #outputs 5, 5, 5
 rep(c(1, 2), times = 3) #outputs 1 2 1 2 1 2
+
+
+# 11. Vectorized Operations
+# Vectorization → performing an operation on an entire vector at once.
+# This is one of the things that makes R powerful for data analysis.
+ages <- c(10, 20, 30, 40)
+ages * 2
+
+
+# 12. Basic Statistical Functions
+marks <- c(80, 75, 90, 85, 70)
+mean(marks) #Mean
+median(marks) #Median
+sum(marks) #Sum
+min(marks) #Minimum
+max(marks) #Maximum
+length(marks) #Length
+sd(marks) #Standard Deviation
+var(marks) #Variance
+summary(marks) #Summary
+
+
+# 13. Comparison Operators
+# | Operator | Meaning       |
+# | -------- | ------------- |
+# | `>`      | greater than  |
+# | `<`      | less than     |
+# | `==`     | equal to      |
+# | `!=`     | not equal     |
+# | `>=`     | greater/equal |
+# | `<=`     | less/equal    |
+10 > 5
+10 < 5
+10 == 10
+10 != 5
+10 >= 10
+10 <= 5
+# =(assignment) is different from ==(comparison). 10 = 5 will give an error, but 10 == 5 will return FALSE.
+
+
+# 14. Logical Operators
+# & → AND
+# | → OR
+# ! → NOT
+age <- 24
+age >= 18 & age <= 30
+
+
+# 15. Working with NA
+marks <- c(80, 75, NA, 90, 85)
+mean(marks)
+mean(marks, na.rm = TRUE) #mean(marks, na.rm = TRUE)
+
+
+#
