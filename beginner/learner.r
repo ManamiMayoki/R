@@ -111,3 +111,9 @@ marks[length(marks)]
 # 9. Creating Sequences
 1:10 #outputs 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 seq(1, 10, by = 2) #outputs 1, 3, 5, 7, 9
+
+
+# 10. Repeating Values
+#Use rep()
+rep(5, times = 3) #outputs 5, 5, 5
+rep(c(1, 2), times = 3) #outputs 1 2 1 2 1 2
